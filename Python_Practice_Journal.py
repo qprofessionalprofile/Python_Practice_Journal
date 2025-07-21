@@ -153,3 +153,20 @@
 
 # other_num_list = [10, 20, 40]
 # print(squared_nums(other_num_list))
+
+
+
+#-- Basic Exception Handeling 
+try:
+    x = 10 / 0 
+except ZeroDivisionError:
+    print("You cant divide by zero!")
+   
+    
+#--Anatomy of Basic Exception Haneling 
+# try:
+    #code that can raise an exception 
+#except ExceptionType:
+    #Code that runs if an exception occurs
+    
+
