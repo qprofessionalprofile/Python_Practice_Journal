@@ -32,7 +32,7 @@
 
 
 
-#--Further practice using strip, replace, split, and upper.
+#-- Further practice using strip, replace, split, and upper.
 
 # my_String = '   Might I be an engineer?????   '
 
@@ -65,23 +65,91 @@
 
 
 
-# #String conversion to Integer
+#-- String conversion to Integer
 # num_str = "123"
 # num = print(int(num_str))
 
+#-- Looping Through a list
 
-first_num = int(input("What is your first number?"))
-second_num = int(input("What is your second number"))
-math_choice = input("waht kinda math you doin today?")
-
-math_choice = if math_choicea
-
-calc_list = [
-addition = first_num + second_num,
-subtract = first_num - second_num,
-multiply = first_num * second_num,
-divide = first_num / second_num]
+# fruits = ['apple', 'bannana', 'cherry', 'anotherFruit']
+# for fruit in fruits:
+#     print(fruits)
     
-def calc_fun(calc_List) :
-    if calc_List == calc_List[0]:
-        print
+# # My use in range
+# for i in range(12):# Count will start @ index 0 and stop at 11
+#     print(i)
+    
+    
+# # Use of a while loop
+# count = 0
+# while count < 5:
+#     print(count)
+#     count += 1 #Incriment by 1 
+
+
+# #--While Loop practice: Return positive values
+    
+# num = 2
+# while num % 2 == 0:
+#         print(num)
+#         num += 2
+#         if num > 20: # This is stops the block after the conditions met
+#                 break
+        
+# num = 2
+# while num <= 20: # This prints the same result
+#         print(num)
+#         num += 2
+
+
+# For In loops & the use of the break statement 
+
+# for i in range(10):
+#         if i == 5: # Stop loop before you hit 5
+#             break # Listens for a met condition then stops the loop
+#         print(i)
+
+# for i in range(5):
+#         if i == 3: # When i is 3 then skip it
+#            continue # Listens for the information in a the loops iteration specified then skips it
+#         print(i)
+        
+# for i in range(31):
+#         if (i % 3 == 0):
+#                 continue
+#         if (i > 25):
+#                 break
+#         else:
+#                 print(i)
+                
+#-- Proof of knowledge of the parameters and the arguments
+
+# def introduce_yourself(Name, Hobby):
+#     print(f"Hi I'm {Name}, and my hobby is {Hobby}.")
+    
+# introduce_yourself("Q", "Coding")
+
+
+# # --List of numbers function
+# list_of_numbers = [1, 5, 10]
+
+# def squared_nums(nums_list):
+#         empty_list = []
+#         for num in nums_list:
+#                         squared_num = num ** 2
+#                         empty_list.append(squared_num)
+#         return empty_list
+
+# print(squared_nums(list_of_numbers))
+
+
+#-- Continued Practice 
+
+# def squared_nums(new_list):
+#         empty_list = []
+#         for squared_num in new_list:
+#                 empty_list.append(squared_num * squared_num)
+#         return empty_list
+
+# other_num_list = [10, 20, 40]
+# print(squared_nums(other_num_list))
