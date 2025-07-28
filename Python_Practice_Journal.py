@@ -156,11 +156,11 @@
 
 
 
-#-- Basic Exception Handeling 
-try:
-    x = 10 / 0 
-except ZeroDivisionError:
-    print("You cant divide by zero!")
+# #-- Basic Exception Handeling 
+# try:
+#     x = 10 / 0 
+# except ZeroDivisionError:
+#     print("You cant divide by zero!")
    
     
 #--Anatomy of Basic Exception Haneling 
@@ -168,5 +168,14 @@ except ZeroDivisionError:
     #code that can raise an exception 
 #except ExceptionType:
     #Code that runs if an exception occurs
-    
 
+
+# --Loop excercise 
+# meals = ["pasta", "pizza", "salad"]
+
+# for meal in meals:
+#     print(meal.capitalize())
+    
+# print("Here's some dinner options for you hiring manager!")
+
+    
