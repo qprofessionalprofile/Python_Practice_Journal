@@ -1,3 +1,6 @@
+"""
+A nested dictionary to practice nesting multiple dicttionaries program
+"""
 rental_proprties = {
     'property_FL_001': {
         'State' : 'Florida',
@@ -5,15 +8,15 @@ rental_proprties = {
         'House type' : 'Mansion',
         'Price per night: $' : 470,
         'Rating' : 4.60
-    },
-    'property_CA_001': {
+    }, # The dictionary ends here and a new one opens after the comma
+    'property_CA_001': { # Dictionary opens after the name
         'State' : 'California',
         'City' : 'San Diego',
         'House type' : 'Condo',
         'Price per night: $' : 220,
         'Rating' : 4.60
     }
-}
+} # The rental proferties 
 get_property = rental_proprties['property_CA_001']['State']
 with open('property_info_request.txt', 'w') as file: # creates a new file and names it
    for rentals in get_property: #loops over ez. set item 
