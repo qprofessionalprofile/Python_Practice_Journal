@@ -66,12 +66,12 @@ Similar in nature to the built in str.split() but with re.split() regex rules
 makes for more complex splitting. Eg. splitting mulitple delimeters or 
 patterns.
 """
-    
 
 info = 'Regex, in, python,s plitting, example'
 
 splitter = re.split(r"[,.;\s!-]+", info)
 print(splitter)
+
 
 
 """
@@ -85,6 +85,9 @@ CSV_Split = re.split(r",", CSV_info)
 print(CSV_Split)
 
 
-"""
 
 """
+Manipulating and subbing text with the
+re.sub(pattern, text, replacer) function.
+"""
+

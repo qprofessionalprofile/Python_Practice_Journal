@@ -13,6 +13,7 @@ my_dictionary = {
 # del my_dictionary['occupation']
 
 
+
 # #creating Errors, Printing the list, finding keys and values of the dictionary
 
 # print(my_dictionary)#prints entire dictionary 
@@ -20,6 +21,7 @@ my_dictionary = {
 # print(ol_no_name_key) # returns the popped key from key value pairs
 # find_age = my_dictionary['age']
 # print(find_age)
+
 
 
 # #  Using the .get() method and .key
@@ -69,10 +71,10 @@ print(rental_proprties['property_CA_001']['phone'])
 
 # print(list(rental_proprties.values()))
 
+
 # Looping through the list of properties
 for proerty_id, info in rental_proprties.items():
     print(f"Property ID: {proerty_id}, State: {proerty_id}, Rating: {proerty_id}")
-
 
 user_rental = rental_proprties['property_CA_001']['City']
 print(user_rental)  
