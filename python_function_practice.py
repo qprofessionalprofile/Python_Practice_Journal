@@ -1,3 +1,7 @@
+"""
+Practice using funtions, went over things like, function scope, arguments and parameters. 
+"""
+
 # def greet(): # declaration followed by name
 #     print("Coding temple python practice!") # code blaock
     
@@ -24,22 +28,25 @@
 
 #-- Function scope to show local vs Global
 
-x = 10 # this is a Global vaiable entire program can use this
+# x = 10 # this is a Global vaiable entire program can use this
 
-def print_number():
-    x = 8  #This is a Local Variable. They have the same name but are different.
-    print(x) #
+# def print_number():
+#     x = 8  #This is a Local Variable. They have the same name but are different.
+#     print(x) #
 
-print_number()    
-print(x)   
+# print_number()    
+# print(x)   
 
  
  
-#-- Default parameters & Variables Length
+# #-- Default parameters & Variables Length
 
-def greet(name = "emptyContainer"):
-    print(f"Hello {name}!")
+# def greet(name = "emptyContainer"):
+#     print(f"Hello {name}!")
     
-greet()
-greet("Alice")
+# greet()
+# greet("Alice")
 
+"""
+Will update to go further into how function nesting works and how LEGB rules occur in python as well.
+"""

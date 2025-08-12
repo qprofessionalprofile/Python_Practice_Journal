@@ -1,3 +1,9 @@
+"""
+Practice with exception handeling using try, except, else, and finally. 
+This is also practice from the practice journal but it got its own page!
+I'll be adding more later.
+"""
+
 # #syntax error
 # if True # missing the colon.
 #     print("This if will return a Syntax error")

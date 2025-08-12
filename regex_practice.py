@@ -1,5 +1,9 @@
 import re
 
+"""
+Practice using Pythons regular expressions. I'm practicing functions like findall(), split(), match(), etc..
+"""
+
 # text = 'Hi my name is Quinn, and I like to solve problems and I like coffee!'
 # ands = re.findall(r'and', text) # Regex findall() returns a list of the occurences  also finds all matches then returns a list
 # print(ands)

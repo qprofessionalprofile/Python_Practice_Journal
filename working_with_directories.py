@@ -1,11 +1,15 @@
-my_dictionary = {
-    'name' : 'Eleanor',
-    'age' : 69,
-    'city' : 'New York'    
-}
+"""
+Practice with dictionaries. Snippets of code with proof of concepts in them.
+"""
+
+# my_dictionary = {
+#     'name' : 'Eleanor',
+#     'age' : 69,
+#     'city' : 'New York'    
+# }
 
 
-# #Adding, Finding, Removing keys and values
+# Adding, Finding, Removing keys and values
 
 # my_dictionary['occupation'] = 'Developer' # Adds value to the dictionary
 # my_dictionary['age'] = 70
@@ -14,7 +18,7 @@ my_dictionary = {
 
 
 
-# #creating Errors, Printing the list, finding keys and values of the dictionary
+#creating Errors, Printing the list, finding keys and values of the dictionary
 
 # print(my_dictionary)#prints entire dictionary 
 # #print(my_dictionary['name'])# Will throw an error when printed
@@ -24,7 +28,7 @@ my_dictionary = {
 
 
 
-# #  Using the .get() method and .key
+#  Using the .get() method and .key
 
 # print(my_dictionary.get('age')) # .get() avoids missing keys
 # print(my_dictionary.get('homedesign', 'NotIntheList'))
@@ -46,35 +50,35 @@ my_dictionary = {
     
     
     
-rental_proprties = {
-    'property_FL_001': {
-        'State' : 'Florida',
-        'City' : 'Miami',
-        'House type' : 'Mansion',
-        'Price per night: $' : '470',
-        'Rating' : '4.60'
-},
-    'property_CA_001': {
-        'State' : 'California',
-        'City' : 'San Diego',
-        'House type' : 'Condo',
-        'Price per night: $' : '220',
-        'Rating' : '4.60'
-    }
-}
-rental_proprties['property_CA_001']['phone'] = '555-1234'
-print(rental_proprties['property_CA_001']['phone'])
+# rental_proprties = {
+#     'property_FL_001': {
+#         'State' : 'Florida',
+#         'City' : 'Miami',
+#         'House type' : 'Mansion',
+#         'Price per night: $' : '470',
+#         'Rating' : '4.60'
+# },
+#     'property_CA_001': {
+#         'State' : 'California',
+#         'City' : 'San Diego',
+#         'House type' : 'Condo',
+#         'Price per night: $' : '220',
+#         'Rating' : '4.60'
+#     }
+# }
+# rental_proprties['property_CA_001']['phone'] = '555-1234'
+# print(rental_proprties['property_CA_001']['phone'])
 
-#These dont work with the 
-# rental_proprties ['State'] = "Texas"
+# These dont work with the 
+#  rental_proprties ['State'] = "Texas"
 # rental_proprties ['House type'] = "Castle"
 
 # print(list(rental_proprties.values()))
 
 
 # Looping through the list of properties
-for proerty_id, info in rental_proprties.items():
-    print(f"Property ID: {proerty_id}, State: {proerty_id}, Rating: {proerty_id}")
+# for proerty_id, info in rental_proprties.items():
+#     print(f"Property ID: {proerty_id}, State: {proerty_id}, Rating: {proerty_id}")
 
-user_rental = rental_proprties['property_CA_001']['City']
-print(user_rental)  
+# user_rental = rental_proprties['property_CA_001']['City']
+# print(user_rental)  

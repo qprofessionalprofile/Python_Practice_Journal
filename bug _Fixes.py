@@ -1,3 +1,7 @@
+"""
+These are bug fixes that ive made either in my courses or ones that I've created.
+"""
+
 # --Bug-fix exercise
 
 # buttons = ["cancel", "capitalize", "submit"]

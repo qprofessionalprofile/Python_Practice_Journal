@@ -1,3 +1,7 @@
+"""
+Practice using tuples, like manipulation, slicing, unpacking, etc..
+"""
+
 # tuple1 = ('string', 1, True)
 
 # tuple2= 'tuple packing', 222, True
@@ -92,12 +96,16 @@
 # my_indexed_tuple = (1, 2, 3, 4, 5)
 # print(my_indexed_tuple.index(2))
 
-mastered_tuples = (1, True, "three", 4.4, 5, 'six')
-print('first Element: ', mastered_tuples)
-print('forth Element: ', mastered_tuples)
+# mastered_tuples = (1, True, "three", 4.4, 5, 'six')
+# print('first Element: ', mastered_tuples)
+# print('forth Element: ', mastered_tuples)
 
-sliced_tuple = mastered_tuples[1:5]
-print("Sliced tuple: ", sliced_tuple)
+# sliced_tuple = mastered_tuples[1:5]
+# print("Sliced tuple: ", sliced_tuple)
 
-counted_tuple = mastered_tuples.count(True)
-print("The number of counted Trues: ", mastered_tuples)
+# counted_tuple = mastered_tuples.count(True)
+# print("The number of counted Trues: ", mastered_tuples)
+
+"""
+Will need to add the comments that explain the tuples methods and practices.
+"""
