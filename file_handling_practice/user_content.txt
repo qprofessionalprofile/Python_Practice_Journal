@@ -1,0 +1,6 @@
+This is the information form the first open() function:
+User Message Content: "Here is my message!"
+
+
+This is the information from the second open() function:
+User Message Content: "Here is a new message!"
