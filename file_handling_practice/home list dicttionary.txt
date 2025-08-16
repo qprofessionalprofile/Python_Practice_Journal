@@ -1,0 +1,4 @@
+Mansion: 1000000
+Condo: 250000
+Stilt Home: 450000
+Dome Home: 200000
