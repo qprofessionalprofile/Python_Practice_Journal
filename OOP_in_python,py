@@ -1,0 +1,57 @@
+# """
+# Practice with classe and objects
+# """
+
+# #These are built in classes in python with their own methods and attributs
+# string1 = str()
+# list1 = list()
+# dictionary1 = dict()
+
+# print(type(string1))
+# print(type(list1))
+# print(type(dictionary1))
+
+
+
+# """
+# Custom classes we make ourselves are always created in title case
+# """
+
+# class business:
+#     pass
+
+# my_business = business()
+# print(type(my_business))
+
+
+
+"""
+-Attributes define object qualities and are stroed as variables.
+-Class attributes get shared by every instance in the class. They are defined within the-
+class body, outside of any methods.
+-Instance Attributes these may differ between different instances. They get defined-
+a method called __init__. It initializes objects after their creation.
+"""
+
+class business:
+    # The class attribute.
+    capital = 4000
+    
+    def __init__(self, industry, service):
+        #instance Attributes
+        self.industry = industry
+        self.service = service
+        
+#the creation of instances of the business class
+business1 = business('Bakery', 'Baked Goods')
+business2 = business('Dealership', 'Car Sales')
+
+print(business1.capital) #capital is accessible by all instances
+print(business1.industry)
+print(business2.service)
+
+
+
+"""
+
+"""
