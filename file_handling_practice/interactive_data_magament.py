@@ -3,104 +3,17 @@ import os
 
 
 """
-Practice for file handling and project creation in python.
-This folder is also whwere the files that are created through out the 
-program will live. 
+Interactive Data Management Project from the file handeling practice file. Now its, its own project file.
 """
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-FILE_PATH = os.path.join(BASE_DIR, 'home list.txt')
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-FILE_PATH2 = os.path.join(BASE_DIR, 'home list dicttionary.txt')
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FILE_PATH3 = os.path.join(BASE_DIR, 'Interactive Data Mangament.txt')
 
 
-if not os.path.exists(FILE_PATH):
-    with open(FILE_PATH, 'w') as file:
-        pass
-if not os.path.exists(FILE_PATH2):
-    with open(FILE_PATH2, 'w') as file:
-        pass
     
 if not os.path.exists(FILE_PATH3):
     with open(FILE_PATH3, 'w') as file:
         pass
-# """
-# This is a program that is opening a new file and placing
-# a mesage on the inside using 'w' in the open() function.
-# """
-# with open('user_content.txt', 'w') as file:
-#     file.write('User Message Content: "Here is my message!"')
-    
-
-
-# """
-# This a program the takes the information from an already
-# exhisting file and appends new information to it.
-# Its similar to the one above but this one uses 'a' to append new text to the file.
-# the \n is new as well to make a new line.
-
-# """
-
-# with open('user_content.txt', 'a') as file:
-#     file.write('\nUser Message Content: "Here is a new message!"')
-    
-
-
-# """
-# read(), readlines(), and readline() functions are used to 
-# read information from files that exhist, and thsoe are the  methods.
-# """
-
-# with open('new_user_content.txt', 'r') as file:
-#     read_content = file.read()
-#     print(read_content)
-    
-
-
-# """
-# List storage and extraction (dictionary and lists)
-# """
-
-# # Storage of lists
-# homes = ["One story", "Stilt House", "Condo"]
-
-# with open(FILE_PATH, 'w') as file:
-#     for home in homes:
-#         file.write(home + '\n')
-        
-# # List Extraction
-# homes = []
-# if os.path.exists(FILE_PATH):
-
-#     with open(FILE_PATH, 'r') as file:
-#         for home in homes:
-#             homes.append(home.strip())
-#         print(homes)
-
-# #Extracting from stroed dictionaries
-# homes = {
-#     'Mansion': '1000000',
-#     'Condo': '250000',
-#     'Stilt Home': '450000',
-#     'Dome Home': '200000'    
-# }
-
-# with open(FILE_PATH2, 'w') as f:
-#     for home, types in homes.items():
-#         f.write(f"{home}: {types}\n")
-
-# # Dictionary data extraction
-# home_info = {} #empty list for homes extracted information to live
-
-# with open(FILE_PATH2, 'r') as file:
-#     for line in file:
-#         home, types = line.strip().split(': ')
-#         home_info[home] = types
-# print(home_info)
-
 
 
 """
