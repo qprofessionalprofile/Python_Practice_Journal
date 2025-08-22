@@ -1,6 +1,6 @@
-# """
-# Practice with classe and objects
-# """
+"""
+Practice with classes and objects
+ """
 
 # #These are built in classes in python with their own methods and attributs
 # string1 = str()
@@ -25,33 +25,140 @@
 
 
 
+# """
+# -Attributes define object qualities and are stroed as variables.
+# -Class attributes get shared by every instance in the class. They are defined within the-
+# class body, outside of any methods.
+# -Instance Attributes these may differ between different instances. They get defined-
+# a method called __init__. It initializes objects after their creation.
+# """
+
+# class business:
+#     # The class attribute.
+#     capital = 4000
+    
+#     def __init__(self, industry, service):
+#         #instance Attributes
+#         self.industry = industry
+#         self.service = service
+        
+# #the creation of instances of the business class
+# business1 = business('Bakery', 'Baked Goods')
+# business2 = business('Dealership', 'Car Sales')
+
+# print(business1.capital) #capital is accessible by all instances
+# print(business1.industry)
+# print(business2.service)
+
+
+
+# """
+# Going further into the __init__ Method
+# -__init__ is the method thats used when objects are going to need to be initialized-
+# after their creation.
+# -Class Constructor: It adds attributes to an object when the user creates a new instance class.
+# this is the __init__ method. Allowing users to init individual instances of a class with unique-
+# attributes to every object.
+# """
+
+# # first parameter of init is always "self", refrencing the current instance of its class
+# # 'self' is a convention and not a keyword. Alays use: it maintains consistency.
+# #Addittional parameters can be used after selfto initialize instance attributes.
+
+# def __init__(self, paramater1, paramater2): 
+#     # Code initialization
+
+#     self.attribute2 = paramater2
+#     self.attribute1 = paramater1   
+# #these are ^instance attributes^  self.attribute_name = value
+# #After creation, the attributes are then to every instance, defining state of the object.
+
+
+
+# """
+# How to use the __init__ method.
+# -Creating a new class instance, autuomatically calls the __init__ method.-
+# allowing users to pass args to the class, those are then used to initialize -
+# the objects attributes.
+# """
+
+# #Business class has been defined with an __init__ method.
+# class business:
+    
+#     # The class attribute.
+#     capital = 600000
+    
+#     # This class def takes industry, service, and impact as its parameters
+#     def __init__(self, industry, service, impact):
+        
+#         #Instance Attributes are then defined here: 
+#         self.industry = industry
+#         self.service = service
+#         self.impact = impact
+        
+# #the creation of objects of the business class using their instances here:
+# business1 = business('Bakery', 'Baked Goods', 'High')
+# business2 = business('Dealership', 'Car Sales', 'Medium')
+# business3 = business('Technology', 'Computer Manufacturing', 'High')
+
+# #After object creatoin the attributes are accesible using dot notation. This shows individual states.
+# print(business1.capital) #capital is accessible by all instances
+# print(business1.industry) #inducstry is accessible by all instances
+# print(business1.service) #service is accessible by all instances
+# print(business3.impact) #impact is accessible by all instances
+
+# print(business2.capital) 
+# print(business2.industry)
+# print(business2.service)
+# print(business3.impact)
+
+# print(business3.capital) 
+# print(business3.industry)
+# print(business3.service)
+# print(business3.impact)
+
+
+
 """
--Attributes define object qualities and are stroed as variables.
--Class attributes get shared by every instance in the class. They are defined within the-
-class body, outside of any methods.
--Instance Attributes these may differ between different instances. They get defined-
-a method called __init__. It initializes objects after their creation.
+Why do we need __init__?
+- To initialize and set the states of an object.
+- Flexability, create objects with different initial values making 
+the class reusable 
+- Encpsulation keeps internal object states seperate providing controlled 
+ways to initialize it.
+
+---IMPORTANT __init__ reurns None by default and you DONT need __init__ in every class
+but you wont be able to create initialize attributes during object creation.---
 """
 
 class business:
-    # The class attribute.
-    capital = 4000
-    
-    def __init__(self, industry, service):
-        #instance Attributes
+# __init__ can have default values for parameters, making some arguments optional
+    def __init__(self, industry, service, impact, year=2021):
+        
         self.industry = industry
         self.service = service
+        self.impact = impact
+        self.year = year
         
-#the creation of instances of the business class
-business1 = business('Bakery', 'Baked Goods')
-business2 = business('Dealership', 'Car Sales')
+        
 
-print(business1.capital) #capital is accessible by all instances
-print(business1.industry)
-print(business2.service)
+business1 = business('Bakery', 'Baked Goods', 'High')
+business2 = business('Dealership', 'Car Sales', 'Medium')
+business3 = business('Technology', 'Computer Manufacturing', 'High', 2013)
+
+
+print(business1.year) # will print the year 2021
+print(business3.year) # will print the year 2013
 
 
 
 """
-
+Methods in python classes (how they work)
+- Functions defined in a class describing actions or behaviours that objects
+created from the class can perform. Methods are essential to OOP.It gives objects 
+funcionality.
+- Methods are defineed inside of a class. regular functions can be defined anywhere
+in the code.
+- Methods use self as its first parameter reffering to the class instance calling the method.
+- 
 """
