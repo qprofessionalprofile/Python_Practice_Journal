@@ -1,0 +1,20 @@
+This Python program helps the user stay in pep-8 styling range. 
+
+Its taught me the importance of being clear & concise in my comments and gave me more practice using f-strings and conditionals.
+
+It features:
+- Taking a comment string.
+- Checks the length of the comment.
+- Warns if the comment is too long.
+- Suggests using a multi line comment if needed.
+
+The program stores the comments in a variable. Then uses Pythons built in len() function to check the length.
+An if statement compare the length against the safe range 78-80 characters and prints letting you know if-
+the comment is too long or or just right.
+
+
+Future plans:
+- Add a user input prompt so you can type/paste a comment directly into the console.
+- The program will check the length automatically after you hit enter.
+- implement a loop so after one comment is checked, it'll ask if you want to check another.
+- Making it much easier to copy/pasting comments.
